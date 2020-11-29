@@ -6,5 +6,5 @@ while [ 1 ] ; do
 	date
 	"${workdir}/sslvalid.sh" "$1"
 	"${workdir}/sslvalid.sh" "www.${1}"
-	sleep 10
+	sleep "${interval}"
 done
