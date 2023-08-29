@@ -27,7 +27,7 @@ if [ "$colorized" != "true" ] ; then
 fi
 
 if [ "$(curl "$domain" -I 2> /dev/null)" ] ; then 
-	echo ${color_option} ${color_success}valid${color_normal}
+	echo "${color_option}" "${color_success}valid${color_normal}"
 else
-	echo ${color_option} ${color_error}invalid${color_normal}
+	echo "${color_option}" "${color_error}invalid${color_normal}"
 fi
